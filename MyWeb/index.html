@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>Hyde Jackal</title>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Jeffrey Shen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About Me</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="p-3 mb-2 bg-secondary text-white col-2">
+                <div style="padding: 5px 10% 5px 10%">
+                    Hello
+                </div>
+            </div>
+            <div class="col-10">
+                <h1>
+                    Welcome!
+                </h1>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+                    <li>Item 4</li>
+
+                </ol>
+                <input name="country" list="country" placeholder="country">
+                <datalist id="country">
+                    <option value="United States of America">
+                    <option value="Canada">
+                </datalist>
+                <input type="email" name="email" placeholder="Email Me!">
+                <input type="submit">
+                <div style="padding: 20px 10% 20px 10%">
+                    <form action="emailform.php"
+                          class="p-3 mb-2 bg-secondary text-white rounded"
+                          method=”post”
+                          enctype=”multipart/form-data”
+                          name=”EmailForm”>
+                        <div class="form-group">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Your Email Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailSubject">Your Subject</label>
+                            <textarea class="form-control" id="emailSubject" rows="1"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailTextArea">Your Message</label>
+                            <textarea class="form-control" id="emailTextArea" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
